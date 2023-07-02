@@ -4,12 +4,12 @@
 2. `npm i playwright chai prettier @cucumber/cucumber cucumber-html-reporter`
 3. Created the following folders & files:
 
-- Folders: `features`, `page-objects`, `setup`, `step-definitions`
-- Files: `cucumber.js`, `reporter.js`
+- Folders: [features](features), [page-objects](page-objects), [setup](setup), [step-definitions](step-definitions)
+- Files: [cucumber.js](cucumber.js), [reporter.js](reporter.js)
 
 # Global Assertions:
 
-- Created `setup/assertions.js`:
+- Created [setup/assertions.js](setup/assertions.js):
   - Here, we are setting up the `Chai` assertion library to be used in our framework.
   - We import the `chai` module & assign some of its assertions to global variables.
   - By assigning these global variables, these assertion methods are accessible throughout our code.
@@ -17,7 +17,7 @@
 
 # Global Hooks:
 
-- Created `setup/hooks.js`:
+- Created [setup/hooks.js](setup/hooks.js):
 - Here, we set up hooks that are executed at specific points during the test execution lifecycle.
 - These hooks allow us to perform certain actions before all, before each, after all, & after each test scenario.
   - `BeforeAll`:
@@ -72,7 +72,7 @@
 
 # Cucumber HTML Reporter:
 
-1. Create `reporter.js`:
+1. Create [reporter.js](reporter.js):
 
 - This uses the `cucumber-html-reporter` package to generate a HTML test report.
 - The `options` object holds various config settings related to the HTML report.
