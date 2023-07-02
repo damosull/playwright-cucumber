@@ -34,12 +34,12 @@
 
 # Glue the Assertions, Hooks & Feature Files together:
 
-- Related file: `cucumber.js`
-- `cucumber.js` is a config file that defines how Cucumber should execute our tests.
+- Related file: [cucumber.js](cucumber.js).
+- [cucumber.js](cucumber.js) is a config file that defines how Cucumber should execute our tests.
 - Here, we defined a common set of command-line options that will be used for running our Cucumber tests.
-- It includes options to require Cucumber to load the `assertions.js`, `hooks.js`, `step-definitions` files before executing the tests.
+- It includes options to require Cucumber to load the [setup/assertions.js](setup/assertions.js), [setup/hooks.js](setup/hooks.js), & [step-definitions/login-step.js](step-definitions/login-step.js) files before executing the tests.
 - We use `module.exports` to export a config object that specifies the default set of options for running Cucumber tests. The `default` property is set to a string that concatenates the `common` variable with a filepath to the feature files that Cucumber should run.
-- Overall, `cucumber.js` defines a common set of options & specifies the files & patterns that Cucumber should use when executing our tests.
+- Overall, [cucumber.js](cucumber.js) defines a common set of options & specifies the files & patterns that Cucumber should use when executing our tests.
 
 # Features:
 
