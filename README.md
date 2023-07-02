@@ -34,7 +34,7 @@
 
 # Glue the Assertions, Hooks & Feature Files together:
 
-- Related files: `cucumber.js`:
+- Related file: `cucumber.js`
 - `cucumber.js` is a config file that defines how Cucumber should execute our tests.
 - Here, we defined a common set of command-line options that will be used for running our Cucumber tests.
 - It includes options to require Cucumber to load the `assertions.js`, `hooks.js`, `step-definitions` files before executing the tests.
@@ -81,8 +81,8 @@
   - `jsonFile` specifies the path to the JSON file containing the Cucumber test results which the HTML report will be based on.
   - `output` specifies the output path for the generated HTML report.
 
-- Overall, `reporter.js` configures the options for generating a HTML report using the `cucumber-html-reporter` package & triggers the report generation process based on the specified options.
-- The resulting HTML report will be saved at the specified output path (reports/cucumber_report.html) with the provided settings and metadata.
+- Overall, `reporter.js` configures the options for generating a HTML report using the `cucumber-html-reporter` package & triggers the report generation process based on the specified options _(incl. the output path of the HTML report)_.
+- The generated HTML report can be found in [reports/cucumber_report.html](reports/cucumber_report.html).
 
 2. Update `package.json`:
 
@@ -92,5 +92,5 @@
 3. Recap:
 
 - Now, we can generate the HTML report by doing the following:
-  - Run `npm test` to generate the `cucumber_report.json` file.
-  - Run `npm run report` to generate the HTML report based on the above JSON file.
+  - Run `npm test` to generate the [cucumber_report.json](cucumber_report.json) file.
+  - Run `npm run report` to generate the [reports/cucumber_report.html](reports/cucumber_report.html) based on this JSON file.
