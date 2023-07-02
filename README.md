@@ -43,32 +43,32 @@
 
 # Features:
 
-- Created login.feature
+- Created [features/login.feature](features/login.feature)
 
 # Step Definitions:
 
-- Created `login-step.js`
+- Created [step-definitions/login-step.js](step-definitions/login-step.js)
 
 # Page Object Model (POM):
 
-- Created `login-page.js`
+- Created [page-objects/login-page.js](page-objects/login-page.js)
 
 # Node Script for Cucumber:
 
-- Added the below to package.json:
+- Added the below to [package.json](package.json)
   ```
     "test": "./node\*modules/.bin/cucumber-js --require cucumber.js --require step-definitions/\*\*/\_.js -f json:cucumber_report.json --publish-quiet"
   ```
 - Breakdown of the above command:
 
   - `./node\*modules/.bin/cucumber-js` - specifies the path to the `cucumber.js` executable in the node_modules folder.
-  - `--require cucumber.js` - tells Cucumber to require the `cucumber.js` file as part of the test execution _(the file containing the Cucumber configuration)_.
+  - `--require cucumber.js` - tells Cucumber to require the [cucumber.js](cucumber.js) file as part of the test execution _(the file containing the Cucumber configuration)_.
   - `--require step-definitions/**/*.js` - tells Cucumber to require all files that match this expression as part of the test execution.
   - `-f json:cucumber_report.json` - specifies the formatter to use for generating the test report. Here, it specifies the `json` formatter & specifies the file where the output should be written.
   - `--publish-quiet` - suppresses the publishing of the report to the Cucumber cloud service.
-  - Overall, the `test` command runs the Cucumber tests using `cucumber.js`, specifies the required files, generates a JSON test report, & disables publishing the report to the Cucumber cloud service.
+  - Overall, the `test` command runs the Cucumber tests using [cucumber.js](cucumber.js), specifies the required files, generates a JSON test report, & disables publishing the report to the Cucumber cloud service.
 
-- Now, if we run our tests with `npm test`, the results are published to `cucumber_report.json` which will shortly be used to generate our HTML Report.
+- Now, if we run our tests with `npm test`, the results are published to [cucumber_report.json](cucumber_report.json) which will shortly be used to generate our HTML Report.
 
 # Cucumber HTML Reporter:
 
@@ -76,12 +76,12 @@
 
 - This uses the `cucumber-html-reporter` package to generate a HTML test report.
 - The `options` object holds various config settings related to the HTML report.
-- Some `options` examples:
 
-  - `jsonFile` specifies the path to the JSON file containing the Cucumber test results which the HTML report will be based on.
-  - `output` specifies the output path for the generated HTML report.
+  - Some `options` examples:
+    - `jsonFile` specifies the path to the JSON file containing the Cucumber test results which the HTML report will be based on.
+    - `output` specifies the output path for the generated HTML report.
 
-- Overall, `reporter.js` configures the options for generating a HTML report using the `cucumber-html-reporter` package & triggers the report generation process based on the specified options _(incl. the output path of the HTML report)_.
+- Overall, [reporter.js](reporter.js) configures the options for generating a HTML report using the `cucumber-html-reporter` package & triggers the report generation process based on the specified options _(incl. the output path of the HTML report)_.
 - The generated HTML report can be found in [reports/cucumber_report.html](reports/cucumber_report.html).
 
 2. Update `package.json`:
