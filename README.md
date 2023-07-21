@@ -92,5 +92,5 @@
 3. Recap:
 
 - Now, we can generate the HTML report by doing the following:
-  - Run `npm test` to generate the [cucumber_report.json](cucumber_report.json) file.
-  - Run `npm run report` to generate the [reports/cucumber_report.html](reports/cucumber_report.html) based on this JSON file.
+  1. Run `npm test` to generate the [cucumber_report.json](cucumber_report.json) file.
+  2. Run `npm run report` to generate the [reports/cucumber_report.html](reports/cucumber_report.html) based on this JSON file.
