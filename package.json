@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
+    "dev-tag": "./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --tags @dev --publish-quiet",
     "report": "node reporter.js"
   },
   "keywords": [],
@@ -16,5 +17,8 @@
     "cucumber-html-reporter": "^7.1.0",
     "playwright": "^1.35.1",
     "prettier": "^2.8.8"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
   }
 }

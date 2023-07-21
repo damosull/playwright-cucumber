@@ -70,6 +70,14 @@
 
 - Now, if we run our tests with `npm test`, the results are published to [cucumber_report.json](cucumber_report.json) which will shortly be used to generate our HTML Report.
 
+# Tags:
+
+- If you want to specifically include or exclude certain scenarios, you can add a `@tag` to the scenario or feature.
+- How to run tests with a specific tag:
+  - All you have to do is add `--tags @demo` to the run command, making sure the scenario/feature you want to run has that tag also.
+  - Example of full command: `./node_modules/.bin/cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --tags @demo --publish-quiet`
+- The `dev-tag` script in package.json is to run all scenarios that have the `@dev` tag
+
 # Cucumber HTML Reporter:
 
 1. Create [reporter.js](reporter.js):
