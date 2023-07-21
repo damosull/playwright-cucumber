@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { LoginPage } = require('../page-objects/login-page');
+const { LoginPage } = require('../../page-objects/sauce-demo/login-page');
 
 const loginPage = new LoginPage();
 
