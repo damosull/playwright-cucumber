@@ -1,3 +1,5 @@
+TODO: Need to change the paths & names for some files like reporter.js
+
 # Initial Project Setup:
 
 1. `npm init -y`
@@ -102,3 +104,9 @@
 - Now, we can generate the HTML report by doing the following:
   1. Run `npm test` to generate the [cucumber_report.json](cucumber_report.json) file.
   2. Run `npm run report` to generate the [reports/cucumber_report.html](reports/cucumber_report.html) based on this JSON file.
+
+Need to restructure the readme, etc. but this is importnat for reporting:
+
+-> `execute:script` will generate `cucumber-report.html` & `cucumber-report.json` as specified in `cucumber.json`.
+-> `generate:report` will generate `cucumber-html-report.html` as per `utils/reporter.js`. This is generated based on `cucumber-report.json` from the previous point.
+-> For reporting, one of the next steps should be where to get dynamic data for reports (machine, etc.)
