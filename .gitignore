@@ -1,3 +1,2 @@
 node_modules
-cucumber_report.json
-cucumber_report.html
+test-results/
