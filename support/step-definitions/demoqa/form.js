@@ -29,5 +29,7 @@ Then('I can enter data retrieved from a XLSX file in the form', async () => {
     await formPage.txtFirstName.type(firstName);
     await formPage.txtLastName.type(lastName);
     await formPage.txtEmail.type(email);
+
+    expect(2).to.equal(3); // Recommended
   }
 });

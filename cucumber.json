@@ -5,11 +5,7 @@
       "snippetInterface": "async-await"
     },
     "paths": ["features/"],
-    "require": [
-      "setup/assertions.js",
-      "setup/hooks.js",
-      "support/step-definitions/**/*.js"
-    ],
+    "require": ["support/hooks/*.js", "support/step-definitions/**/*.js"],
     "format": [
       "html:test-results/report/cucumber-report.html",
       "json:test-results/report/cucumber-report.json"

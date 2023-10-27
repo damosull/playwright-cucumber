@@ -10,7 +10,7 @@ const {
 
 BeforeAll(async () => {
   console.log('Launch Browser');
-  global.browser = await playwright['chromium'].launch({ headless: true });
+  global.browser = await playwright['chromium'].launch({ headless: false });
 });
 
 Before(async () => {
@@ -23,7 +23,7 @@ After(async function ({ pickle, result }) {
   // Screenshot only for failure
   if (result?.status == Status.FAILED) {
     const image = await global.page.screenshot({
-      path: `./test-results/screenshots/${pickle.name}.png`,
+      path: `../test-results/screenshots/${pickle.name}.png`,
       type: 'png',
     });
     await this.attach(image, 'image/png');
