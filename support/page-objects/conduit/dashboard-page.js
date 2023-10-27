@@ -4,6 +4,7 @@ class DashboardPage {
     this.btnLogOut = page.locator(
       'button:has-text("Or click here to logout.")'
     );
+    this.btnNewPost = page.locator('a[href="#editor"]');
   }
 }
 
