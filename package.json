@@ -24,6 +24,7 @@
     "prettier": "^2.8.8"
   },
   "devDependencies": {
+    "luxon": "^3.4.3",
     "xlsx": "^0.18.5"
   }
 }
