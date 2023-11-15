@@ -4,7 +4,7 @@
     "formatOptions": {
       "snippetInterface": "async-await"
     },
-    "paths": ["features/"],
+    "paths": ["features"],
     "require": ["support/hooks/*.js", "support/step-definitions/**/*.js"],
     "format": [
       "html:test-results/report/cucumber-report.html",
