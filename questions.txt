@@ -1,7 +1,0 @@
-The below command is what i had here as default before:
-
-"test": "npx cucumber-js --require cucumber.js --require step-definitions/**/*.js -f json:cucumber_report.json --publish-quiet",
-
-i'm using cucumber.json now instead of cucumber.js & the run script to specify these.
-is there somewhere i can put --publish-queit, or is it needed in updated playwright versions?
-
