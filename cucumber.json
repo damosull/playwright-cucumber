@@ -4,7 +4,7 @@
     "formatOptions": {
       "snippetInterface": "async-await"
     },
-    "paths": ["features/vignesh/radio-button.feature"],
+    "paths": ["features/vignesh/text-box.feature"],
     "require": ["support/hooks/*.js", "support/step-definitions/**/*.js"],
     "format": [
       "html:test-results/report/cucumber-report.html",
