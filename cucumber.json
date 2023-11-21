@@ -1,0 +1,14 @@
+{
+  "default": {
+    "dryRun": false,
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+    "paths": ["features/vignesh/radio-button.feature"],
+    "require": ["support/hooks/*.js", "support/step-definitions/**/*.js"],
+    "format": [
+      "html:test-results/report/cucumber-report.html",
+      "json:test-results/report/cucumber-report.json"
+    ]
+  }
+}
